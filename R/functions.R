@@ -994,7 +994,7 @@ kbal = function(allx,
     #cont data only
     if(!cat_data & !mixed_data) {
         
-        if(class(allx) != "matrix") {
+        if(!("matrix" %in% class(allx)) {
             allx = as.matrix(allx)
         }
         #check not cat data: 
